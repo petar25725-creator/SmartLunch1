@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartLunch – Jeftini i zdravi ručkovi</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #16a34a;
+    }
+
+    .nav a {
+      margin-left: 20px;
+      font-weight: 500;
+      color: #374151;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #dcfce7, #f0fdf4);
+      padding: 80px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #374151;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: #16a34a;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #15803d;
+    }
+
+    .btn-outline {
+      border: 2px solid #16a34a;
+      color: #16a34a;
+      margin-left: 10px;
+    }
+
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 50px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #16a34a;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .price {
+      font-weight: 700;
+      margin-top: 10px;
+      color: #16a34a;
+    }
+
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .step {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      font-family: inherit;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">SmartLunch</div>
+    <nav>
+      <a href="#o-nama">O nama</a>
+      <a href="#meni">Meni</a>
+      <a href="#kako">Kako radi</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Jeftini i zdravi ručkovi za studente i zaposlene</h1>
+      <p>
+        SmartLunch je servis za brzo naručivanje pristupačnih, nutritivno balansiranih obroka
+        prilagođenih svakodnevnom tempu studenata i zaposlenih.
+      </p>
+      <a href="#meni" class="btn btn-primary">Pogledaj meni</a>
+      <a href="#kontakt" class="btn btn-outline">Kontakt</a>
+    </div>
+    <div class="card">
+      Ovde može ići slika hrane ili logo projekta
+    </div>
+  </div>
+</section>
+
+<section id="o-nama" class="section">
+  <div class="container">
+    <h2 class="section-title">Zašto SmartLunch?</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Pristupačne cene</h3>
+        <p>
+          Naši obroci su cenovno prilagođeni studentskom budžetu, bez kompromisa po pitanju kvaliteta.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Brza priprema</h3>
+        <p>
+          Naručivanje traje manje od jednog minuta, a obroci su spremni za brzo preuzimanje ili dostavu.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Zdrav izbor</h3>
+        <p>
+          Fokus na balansiranim obrocima sa dovoljno proteina, povrća i energije za ceo dan.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="meni" class="section" style="background:#ffffff;">
+  <div class="container">
+    <h2 class="section-title">Primer menija</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Pileći fit obrok</h3>
+        <p>Piletina sa roštilja, integralni pirinač, sezonska salata</p>
+        <div class="price">450 RSD</div>
+      </div>
+      <div class="menu-item">
+        <h3>Vegetarijanski tanjir</h3>
+        <p>Grilovano povrće, testenina, sos od jogurta</p>
+        <div class="price">400 RSD</div>
+      </div>
+      <div class="menu-item">
+        <h3>Goveđi power obrok</h3>
+        <p>Govedina, krompir iz rerne, mešana salata</p>
+        <div class="price">500 RSD</div>
+      </div>
+      <div class="menu-item">
+        <h3>Studentski meni</h3>
+        <p>Dnevni obrok po promotivnoj ceni</p>
+        <div class="price">350 RSD</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kako" class="section">
+  <div class="container">
+    <h2 class="section-title">Kako funkcioniše?</h2>
+    <div class="how-steps">
+      <div class="step">
+        <h3>1. Izaberi obrok</h3>
+        <p>Pregledaj meni i izaberi obrok koji ti najviše odgovara.</p>
+      </div>
+      <div class="step">
+        <h3>2. Poruči online</h3>
+        <p>Jednostavna forma za naručivanje u nekoliko klikova.</p>
+      </div>
+      <div class="step">
+        <h3>3. Preuzmi ili dostava</h3>
+        <p>Preuzmi u najbližem punktu ili sačekaj dostavu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="section" style="background:#ffffff;">
+  <div class="container">
+    <h2 class="section-title">Kontakt</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Ime i prezime" />
+      <input type="email" placeholder="Email adresa" />
+      <textarea rows="4" placeholder="Vaša poruka"></textarea>
+      <button type="submit" class="btn btn-primary" style="width:100%;">Pošalji poruku</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <strong>SmartLunch</strong><br />
+      Studentski projekat – 2026
+    </div>
+    <div>
+      Kontakt: info@smartlunch.rs<br />
+      Telefon: +381 60 123 456
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
